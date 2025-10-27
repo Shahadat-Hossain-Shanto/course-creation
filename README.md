@@ -1,6 +1,6 @@
 # 📘 Course Creation - README
 
-## ⚙️ Setup
+## Setup :
 
 Clone the repository:
 
@@ -19,7 +19,9 @@ Run migrations:  php artisan migrate
 
 Serve the app:  php artisan serve
 
-🏗️ Architecture
+
+
+Architecture :
 
 This is a Laravel 12 project following MVC architecture
 
