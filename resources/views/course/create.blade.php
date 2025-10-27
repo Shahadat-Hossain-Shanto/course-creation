@@ -1,135 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Course</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-    body {
-        background: #f0f2f5;
-        font-family: 'Poppins', sans-serif;
-    }
+        body {
+            background: #f0f2f5;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    .container-fluid {
-        max-width: 1400px;
-    }
+        .container-fluid {
+            max-width: 1400px;
+        }
 
-    /* Page Title Styling */
-    h1 {
-        font-weight: 700;
-        margin-bottom: 2rem;
-        color: #fff;
-        text-align: center;
-        background: linear-gradient(90deg, #4e73df, #1cc88a);
-        padding: 20px 15px;
-        border-radius: 12px;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
+        /* Page Title Styling */
+        h1 {
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(90deg, #4e73df, #1cc88a);
+            padding: 20px 15px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
 
-    form.card {
-        border-radius: 15px;
-        padding: 30px;
-        background: linear-gradient(145deg, #ffffff, #f8f9fa);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+        form.card {
+            border-radius: 15px;
+            padding: 30px;
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
 
-    .module-card {
-        margin-bottom: 1.5rem;
-        border-radius: 12px;
-        padding: 20px;
-        background: #ffffff;
-        border-left: 5px solid #4e73df;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+        .module-card {
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            padding: 20px;
+            background: #ffffff;
+            border-left: 5px solid #4e73df;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
 
-    .module-card h5 {
-        font-weight: 600;
-        color: #2c3e50;
-    }
+        .module-card h5 {
+            font-weight: 600;
+            color: #2c3e50;
+        }
 
-    .content-item {
-        border: 1px dashed #ced6e0;
-        padding: 15px;
-        margin-bottom: 12px;
-        border-radius: 8px;
-        background: #f1f2f6;
-        transition: all 0.3s ease;
-    }
+        .content-item {
+            border: 1px dashed #ced6e0;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            background: #f1f2f6;
+            transition: all 0.3s ease;
+        }
 
-    .content-item:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        background: #e9ecef;
-    }
+        .content-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: #e9ecef;
+        }
 
-    label {
-        font-weight: 500;
-        color: #34495e;
-    }
+        label {
+            font-weight: 500;
+            color: #34495e;
+        }
 
-    .small-btn {
-        font-size: 0.85rem;
-        padding: .25rem .6rem;
-        border-radius: 6px;
-    }
+        .small-btn {
+            font-size: 0.85rem;
+            padding: .25rem .6rem;
+            border-radius: 6px;
+        }
 
-    .btn-primary, .btn-success, .btn-secondary, .btn-danger {
-        border-radius: 8px;
-        font-weight: 500;
-        transition: 0.3s;
-    }
+        .btn-primary, .btn-success, .btn-secondary, .btn-danger {
+            border-radius: 8px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
 
-    .btn-primary:hover {
-        background-color: #2e59d9;
-        border-color: #2e59d9;
-    }
+        .btn-primary:hover {
+            background-color: #2e59d9;
+            border-color: #2e59d9;
+        }
 
-    .btn-success:hover {
-        background-color: #1cc88a;
-        border-color: #1cc88a;
-    }
+        .btn-success:hover {
+            background-color: #1cc88a;
+            border-color: #1cc88a;
+        }
 
-    .btn-submit-wrapper {
-        text-align: center;
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
+        .btn-submit-wrapper {
+            text-align: center;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
 
-    .btn-submit-wrapper button,
-    .btn-submit-wrapper a {
-        width: auto;
-        padding: 10px 35px;
-        font-size: 1rem;
-        font-weight: 500;
-        border-radius: 8px;
-        transition: 0.3s;
-        text-align: center;
-    }
+        .btn-submit-wrapper button,
+        .btn-submit-wrapper a {
+            width: auto;
+            padding: 10px 35px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-align: center;
+        }
 
-    .btn-submit-wrapper a:hover,
-    .btn-submit-wrapper button:hover {
-        opacity: 0.9;
-    }
+        .btn-submit-wrapper a:hover,
+        .btn-submit-wrapper button:hover {
+            opacity: 0.9;
+        }
 
-    .file-preview {
-        max-width: 200px;
-        margin-top: 8px;
-        display: block;
-        border-radius: 6px;
-        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    }
+        .file-preview {
+            max-width: 200px;
+            margin-top: 8px;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
 
-    hr {
-        border-top: 2px solid #dcdde1;
-    }
+        hr {
+            border-top: 2px solid #dcdde1;
+        }
 
-    @media (max-width: 768px){
-        .module-card { border-left: 3px solid #4e73df; }
-        .btn-lg { width: 100%; margin-top: 10px; }
-    }
+        @media (max-width: 768px){
+            .module-card { border-left: 3px solid #4e73df; }
+            .btn-lg { width: 100%; margin-top: 10px; }
+        }
     </style>
 
 </head>
